@@ -3,7 +3,8 @@
 # compiled output
 /dist
 /tmp
-/assets/fonts_
+/assets/fonts
+/lib
 
 # dependencies
 /node_modules
