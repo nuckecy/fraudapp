@@ -1,941 +1,8 @@
-/*
-* DashForge v1.0.0 (https://themepixels.me/dashforge)
-* Copyright 2019 ThemePixels
-* Licensed under ThemeForest License
-*
-*
-
-/* ############### FONTS IMPORT ############### */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Bold.woff") format("woff"); }
 
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Bold-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-BoldItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local("IBM Plex Sans Bold Italic"), local("IBMPlexSans-BoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-BoldItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-ExtraLight.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight"), local("IBMPlexSans-ExtraLight"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLight-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-ExtraLightItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 200;
-  src: local("IBM Plex Sans ExtraLight Italic"), local("IBMPlexSans-ExtraLightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ExtraLightItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Italic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Italic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Light-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-LightItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local("IBM Plex Sans Light Italic"), local("IBMPlexSans-LightItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-LightItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Medium-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-MediumItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 500;
-  src: local("IBM Plex Sans Medium Italic"), local("IBMPlexSans-MediumItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-MediumItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Regular-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-SemiBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBold-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-SemiBoldItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local("IBM Plex Sans SemiBold Italic"), local("IBMPlexSans-SemiBoldItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-SemiBoldItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Text.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text"), local("IBMPlexSans-Text"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Text-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-TextItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 450;
-  src: local("IBM Plex Sans Text Italic"), local("IBMPlexSans-TextItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-TextItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-Thin.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin"), local("IBMPlexSans-Thin"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-Thin-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/complete/woff/IBMPlexSans-ThinItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Cyrillic.woff2") format("woff2");
-  unicode-range: U+0400-045F, U+0472-0473, U+0490-049D, U+04A0-04A5, U+04AA-04AB, U+04AE-04B3, U+04B6-04BB, U+04C0-04C2, U+04CF-04D9, U+04DC-04DF, U+04E2-04E9, U+04EE-04F5, U+04F8-04F9; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Pi.woff2") format("woff2");
-  unicode-range: U+0E3F, U+2032-2033, U+2070, U+2075-2079, U+2080-2081, U+2083, U+2085-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1-EBE7, U+ECE0, U+EFCC; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Latin3.woff2") format("woff2");
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Latin2.woff2") format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Latin1.woff2") format("woff2");
-  unicode-range: U+0000, U+000D, U+0020-007E, U+00A0-00A3, U+00A4-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212, U+FB01-FB02; }
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100;
-  src: local("IBM Plex Sans Thin Italic"), local("IBMPlexSans-ThinItalic"), url("../fonts/ibm-plex-sans/split/woff2/IBMPlexSans-ThinItalic-Greek.woff2") format("woff2");
-  unicode-range: U+0384-038A, U+038C, U+038E-03A1, U+03A3-03CE; }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/inter-ui/Inter-UI-Thin-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Thin-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 100;
-  src: url("../fonts/inter-ui/Inter-UI-ThinItalic-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-ThinItalic-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/inter-ui/Inter-UI-ExtraLight-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-ExtraLight-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 200;
-  src: url("../fonts/inter-ui/Inter-UI-ExtraLightItalic-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-ExtraLightItalic-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/inter-ui/Inter-UI-Light-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Light-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 300;
-  src: url("../fonts/inter-ui/Inter-UI-LightItalic-BETA.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-LightItalic-BETA.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/inter-ui/Inter-UI-Regular.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/inter-ui/Inter-UI-Italic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Italic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/inter-ui/Inter-UI-Medium.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/inter-ui/Inter-UI-MediumItalic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-MediumItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/inter-ui/Inter-UI-SemiBold.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-SemiBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/inter-ui/Inter-UI-SemiBoldItalic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-SemiBoldItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/inter-ui/Inter-UI-Bold.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/inter-ui/Inter-UI-BoldItalic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-BoldItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/inter-ui/Inter-UI-ExtraBold.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-ExtraBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 800;
-  src: url("../fonts/inter-ui/Inter-UI-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-ExtraBoldItalic.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/inter-ui/Inter-UI-Black.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-Black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Inter UI';
-  font-style: italic;
-  font-weight: 900;
-  src: url("../fonts/inter-ui/Inter-UI-BlackItalic.woff2") format("woff2"), url("../fonts/inter-ui/Inter-UI-BlackItalic.woff") format("woff"); }
-
-/* --------------------------------------------------------------------------
-Single variable font.
-
-Note that you may want to do something like this to make sure you're serving
-constant fonts to older browsers:
-html {
-  font-family: 'Inter UI', sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter UI var', sans-serif;
-  }
-}
-
-BUGS:
-- Safari 12.0 will default to italic instead of regular when font-weight
-  is provided in a @font-face declaration.
-  Workaround: Use "Inter UI var alt" for Safari, or explicitly set
-  `font-variation-settings:"slnt" DEGREE`.
-*/
-@font-face {
-  font-family: 'Inter UI var';
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("Inter-UI.var.woff2") format("woff2-variations"), url("Inter-UI.var.woff2") format("woff2"); }
-
-/* --------------------------------------------------------------------------
-
-"Inter UI var alt" is recommended for Safari and Edge, for reliable italics.
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter UI var alt', sans-serif;
-  }
-}
-
-*/
-@font-face {
-  font-family: 'Inter UI var alt';
-  font-weight: 100 900;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-UI-upright.var.woff2") format("woff2"); }
-
-@font-face {
-  font-family: 'Inter UI var alt';
-  font-weight: 100 900;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2 supports variations(gvar)"), url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2-variations"), url("../fonts/inter-ui/Inter-UI-italic.var.woff2") format("woff2"); }
 
 /* ############### BOOTSTRAP FRAMEWORK ############### */
 /*!
@@ -944,8 +11,9 @@ BUGS:
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
-  --blue: #0168fa;
+  --blue: #C80008;
   --indigo: #5b47fb;
   --purple: #6f42c1;
   --pink: #f10075;
@@ -958,7 +26,7 @@ BUGS:
   --white: #fff;
   --gray: #7987a1;
   --gray-dark: #3b4863;
-  --primary: #0168fa;
+  --primary: #C80008;
   --secondary: #7987a1;
   --success: #10b759;
   --info: #00b8d4;
@@ -990,13 +58,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #001737;
   text-align: left;
-  background-color: #fff; }
+  background-color: #f5f6fa;
+  }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -1070,11 +139,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #0168fa;
+  color: #C80008;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0148ae;
+    color: #ed1000;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -2637,8 +1706,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0168fa;
-  border-color: #0168fa; }
+  background-color: #C80008;
+  border-color: #C80008; }
   .btn-primary:hover {
     color: #fff;
     background-color: #0158d4;
@@ -2647,8 +1716,8 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(39, 127, 251, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #C80008;
+    border-color: #C80008; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
@@ -2822,22 +1891,22 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(88, 99, 122, 0.5); }
 
 .btn-outline-primary {
-  color: #0168fa;
-  border-color: #0168fa; }
+  color: #C80008;
+  border-color: #C80008; }
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #C80008;
+    border-color: #C80008; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #0168fa;
+    color: #C80008;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #C80008;
+    border-color: #C80008; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.5); }
@@ -2991,10 +2060,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #0168fa;
+  color: #C80008;
   text-decoration: none; }
   .btn-link:hover {
-    color: #0148ae;
+    color: #ed1000;
     text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: none;
@@ -3226,7 +2295,7 @@ input[type="button"].btn-block {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #0168fa; }
+    background-color: #C80008; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #7987a1;
     pointer-events: none;
@@ -3586,8 +2655,8 @@ input[type="button"].btn-block {
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #0168fa;
-    background-color: #0168fa; }
+    border-color: #C80008;
+    background-color: #C80008; }
   .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.25); }
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
@@ -3633,8 +2702,8 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #0168fa;
-  background-color: #0168fa; }
+  border-color: #C80008;
+  background-color: #C80008; }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e"); }
@@ -3798,7 +2867,7 @@ input[type="button"].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #0168fa;
+    background-color: #C80008;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3819,7 +2888,7 @@ input[type="button"].btn-block {
   .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #0168fa;
+    background-color: #C80008;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3843,7 +2912,7 @@ input[type="button"].btn-block {
     margin-top: 0;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
-    background-color: #0168fa;
+    background-color: #C80008;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3936,7 +3005,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -4419,12 +3488,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #0168fa;
+  color: #C80008;
   background-color: #fff;
   border: 1px solid #cdd4e0; }
   .page-link:hover {
     z-index: 2;
-    color: #0148ae;
+    color: #ed1000;
     text-decoration: none;
     background-color: #e3e7ed;
     border-color: #cdd4e0; }
@@ -4445,8 +3514,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #0168fa;
-  border-color: #0168fa; }
+  background-color: #C80008;
+  border-color: #C80008; }
 
 .page-item.disabled .page-link {
   color: #7987a1;
@@ -4511,7 +3580,7 @@ input[type="button"].btn-block {
 
 .badge-primary {
   color: #fff;
-  background-color: #0168fa; }
+  background-color: #C80008; }
   a.badge-primary:hover, a.badge-primary:focus {
     color: #fff;
     background-color: #0153c7; }
@@ -4718,7 +3787,7 @@ input[type="button"].btn-block {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #0168fa;
+  background-color: #C80008;
   transition: width 0.6s ease; }
   @media (prefers-reduced-motion: reduce) {
     .progress-bar {
@@ -4781,8 +3850,8 @@ input[type="button"].btn-block {
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: #C80008;
+    border-color: #C80008; }
 
 .list-group-horizontal {
   flex-direction: row; }
@@ -5585,7 +4654,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #0168fa !important; }
+  background-color: #C80008 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -5685,7 +4754,7 @@ button.bg-dark:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #0168fa !important; }
+  border-color: #C80008 !important; }
 
 .border-secondary {
   border-color: #7987a1 !important; }
@@ -7911,10 +6980,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #0168fa !important; }
+  color: #C80008 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #0148ae !important; }
+  color: #ed1000 !important; }
 
 .text-secondary {
   color: #7987a1 !important; }
@@ -8086,8 +7155,8 @@ strong {
   padding: 11px 15px;
   border-radius: 3px; }
   .alert-outline.alert-primary {
-    border-color: #0168fa;
-    color: #0168fa; }
+    border-color: #C80008;
+    color: #C80008; }
   .alert-outline.alert-secondary {
     border-color: #97a3b9;
     color: #7987a1; }
@@ -8115,7 +7184,7 @@ strong {
   .alert-solid:not(.alert-secondary), .alert-solid:not(.alert-light) {
     color: #fff; }
   .alert-solid.alert-primary {
-    background-color: #0168fa; }
+    background-color: #C80008; }
   .alert-solid.alert-secondary {
     background-color: #7987a1; }
   .alert-solid.alert-success {
@@ -8171,11 +7240,11 @@ strong {
       .breadcrumb-style2 .breadcrumb-item a:focus,
       .breadcrumb-style3 .breadcrumb-item a:hover,
       .breadcrumb-style3 .breadcrumb-item a:focus {
-        color: #0168fa; }
+        color: #C80008; }
     .breadcrumb-style1 .breadcrumb-item.active,
     .breadcrumb-style2 .breadcrumb-item.active,
     .breadcrumb-style3 .breadcrumb-item.active {
-      color: #0168fa; }
+      color: #C80008; }
     .breadcrumb-style1 .breadcrumb-item + .breadcrumb-item::before,
     .breadcrumb-style2 .breadcrumb-item + .breadcrumb-item::before,
     .breadcrumb-style3 .breadcrumb-item + .breadcrumb-item::before {
@@ -8204,8 +7273,8 @@ strong {
     margin-top: -2px; }
   .btn.active-primary, .ui-datepicker-buttonpane button.active-primary, .sp-container button.active-primary, .btn.active-primary:hover, .ui-datepicker-buttonpane button.active-primary:hover, .sp-container button.active-primary:hover, .btn.active-primary:focus, .ui-datepicker-buttonpane button.active-primary:focus, .sp-container button.active-primary:focus {
     background-color: #fff;
-    border-color: #0168fa;
-    color: #0168fa; }
+    border-color: #C80008;
+    color: #C80008; }
 
 .btn-sm, .btn-group-sm > .btn, .ui-datepicker-buttonpane .btn-group-sm > button, .sp-container .btn-group-sm > button, .ui-datepicker-buttonpane button {
   font-size: 13px;
@@ -8274,12 +7343,12 @@ strong {
     color: #fff; }
 
 .btn-brand-02 {
-  background-color: #042893;
-  border-color: #042893;
+  background-color: #9A0006;
+  border-color: #9A0006;
   color: #fff; }
   .btn-brand-02:hover, .btn-brand-02:focus {
-    background-color: #063cdd;
-    border-color: #063cdd;
+    background-color: #C80008;
+    border-color: #C80008;
     color: #fff; }
 
 .btn-outline-facebook {
@@ -8425,7 +7494,7 @@ strong {
   .dropdown-item:hover, .dropdown-item:focus {
     background-color: #e5e9f2; }
   .dropdown-item.active {
-    background-color: #0168fa; }
+    background-color: #C80008; }
 
 .dropdown-header {
   padding-left: 15px;
@@ -8589,9 +7658,9 @@ textarea.form-control {
 .nav-link {
   color: #596882; }
   .nav-link:hover, .nav-link:focus {
-    color: #0168fa; }
+    color: #C80008; }
   .nav-link.active {
-    color: #0168fa; }
+    color: #C80008; }
 
 .nav-pills .nav-link {
   transition: all 0.2s ease-in-out; }
@@ -8639,7 +7708,7 @@ textarea.form-control {
     color: #97a3b9; }
 
 .page-item.active .page-link {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .page-link {
   min-width: 36px;
@@ -8648,7 +7717,7 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0168fa;
+  color: #C80008;
   transition: all 0.2s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .page-link {
@@ -8681,7 +7750,7 @@ textarea.form-control {
   padding: 8px 7px;
   margin-left: 0;
   border-width: 2px;
-  border-color: #0168fa;
+  border-color: #C80008;
   border-radius: 3px; }
 
 .pagination-filled .page-item + .page-item {
@@ -8764,10 +7833,10 @@ textarea.form-control {
 .popover-header-primary.bs-popover-bottom .arrow::before, .popover-header-primary.bs-popover-auto[x-placement^="bottom"] .arrow::before,
 .popover-header-primary.bs-popover-bottom .arrow::after,
 .popover-header-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  border-bottom-color: #0168fa; }
+  border-bottom-color: #C80008; }
 
 .popover-header-primary .popover-header {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .popover-header-secondary.bs-popover-bottom .arrow::before, .popover-header-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::before,
 .popover-header-secondary.bs-popover-bottom .arrow::after,
@@ -8848,15 +7917,15 @@ textarea.form-control {
     display: none; }
 
 .popover-primary {
-  background-color: #0168fa; }
+  background-color: #C80008; }
   .popover-primary.bs-popover-top .arrow::after, .popover-primary.bs-popover-auto[x-placement^="top"] .arrow::after {
-    border-top-color: #0168fa; }
+    border-top-color: #C80008; }
   .popover-primary.bs-popover-bottom .arrow::after, .popover-primary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-    border-bottom-color: #0168fa; }
+    border-bottom-color: #C80008; }
   .popover-primary.bs-popover-right .arrow::after, .popover-primary.bs-popover-auto[x-placement^="right"] .arrow::after {
-    border-right-color: #0168fa; }
+    border-right-color: #C80008; }
   .popover-primary.bs-popover-left .arrow::after, .popover-primary.bs-popover-auto[x-placement^="left"] .arrow::after {
-    border-left-color: #0168fa; }
+    border-left-color: #C80008; }
 
 .popover-secondary {
   background-color: #7987a1; }
@@ -8940,19 +8009,19 @@ textarea.form-control {
   padding: 5px 10px; }
 
 .tooltip-primary .tooltip-inner {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .tooltip-primary.bs-tooltip-top .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="top"] .arrow::before {
-  border-top-color: #0168fa; }
+  border-top-color: #C80008; }
 
 .tooltip-primary.bs-tooltip-bottom .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
-  border-bottom-color: #0168fa; }
+  border-bottom-color: #C80008; }
 
 .tooltip-primary.bs-tooltip-left .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="left"] .arrow::before {
-  border-left-color: #0168fa; }
+  border-left-color: #C80008; }
 
 .tooltip-primary.bs-tooltip-right .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before, .tooltip-primary.bs-tooltip-auto[x-placement^="right"] .arrow::before {
-  border-right-color: #0168fa; }
+  border-right-color: #C80008; }
 
 .tooltip-secondary .tooltip-inner {
   background-color: #7987a1; }
@@ -9117,7 +8186,7 @@ textarea.form-control {
     border-top-width: 0; }
 
 .thead-primary {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .thead-secondary {
   background-color: #7987a1; }
@@ -9195,7 +8264,7 @@ textarea.form-control {
   border-top-width: 0; }
 
 .table-primary thead {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .table-primary tbody tr {
   background-color: #f1f7ff; }
@@ -9340,7 +8409,7 @@ textarea.form-control {
   .ui-accordion-header.ui-state-active {
     background-color: #fff;
     border-bottom-width: 0;
-    color: #0168fa; }
+    color: #C80008; }
     .ui-accordion-header.ui-state-active .ui-accordion-header-icon::before {
       content: '\f368'; }
 
@@ -9354,14 +8423,14 @@ textarea.form-control {
     border-bottom-left-radius: 0.25rem; }
 
 .accordion-style1 .ui-accordion-header.ui-state-active {
-  border-color: #0168fa;
+  border-color: #C80008;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   background-color: #f1f7ff; }
 
 .accordion-style1 .ui-accordion-content.ui-accordion-content-active {
   z-index: 5;
-  border-color: #0168fa;
+  border-color: #C80008;
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   background-color: #f1f7ff; }
@@ -9370,7 +8439,7 @@ textarea.form-control {
   box-shadow: none; }
   .accordion-style2 .ui-accordion-header {
     border-width: 0;
-    background-color: #0168fa;
+    background-color: #C80008;
     color: #fff;
     border-width: 2px;
     border-bottom-width: 0;
@@ -9384,13 +8453,13 @@ textarea.form-control {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       background-color: #f1f7ff;
-      color: #0168fa;
-      border-color: #0168fa; }
+      color: #C80008;
+      border-color: #C80008; }
   .accordion-style2 .ui-accordion-content {
     background-color: #f1f7ff;
     border-width: 2px;
     border-top-width: 0;
-    border-color: #0168fa; }
+    border-color: #C80008; }
     .accordion-style2 .ui-accordion-content.ui-accordion-content-active {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -9616,7 +8685,7 @@ textarea.form-control {
     .card-profile h5 a {
       color: #1b2e4b; }
       .card-profile h5 a:hover, .card-profile h5 a:focus {
-        color: #0168fa; }
+        color: #C80008; }
   .card-profile p {
     color: #8392a5; }
 
@@ -9635,7 +8704,7 @@ textarea.form-control {
       .card-event .card-body h5 a {
         color: #1b2e4b; }
         .card-event .card-body h5 a:hover, .card-event .card-body h5 a:focus {
-          color: #0168fa; }
+          color: #C80008; }
   .card-event .card-footer {
     border: 1px solid rgba(72, 94, 144, 0.16);
     border-top-width: 0;
@@ -9907,7 +8976,7 @@ textarea.form-control {
     margin-right: 15px; }
   .dropdown-profile .dropdown-item:hover, .dropdown-profile .dropdown-item:focus {
     background-color: transparent;
-    color: #0168fa; }
+    color: #C80008; }
 
 .dropdown-icon .dropdown-item {
   display: flex;
@@ -9947,7 +9016,7 @@ textarea.form-control {
 .link-01 {
   color: #001737; }
   .link-01:hover, .link-01:focus {
-    color: #0168fa; }
+    color: #C80008; }
 
 .link-02 {
   color: #1b2e4b; }
@@ -9960,7 +9029,7 @@ textarea.form-control {
     color: #1b2e4b; }
 
 .hover-primary:hover, .hover-primary:focus {
-  color: #0168fa; }
+  color: #C80008; }
 
 .activity {
   margin: 0;
@@ -10085,11 +9154,11 @@ textarea.form-control {
 .marker-primary {
   color: #fff; }
   .marker-primary.marker-icon::before {
-    background-color: #0168fa; }
+    background-color: #C80008; }
   .marker-primary.marker-ribbon {
-    background-color: #0168fa; }
+    background-color: #C80008; }
     .marker-primary.marker-ribbon::after {
-      border-bottom-color: #0148ae; }
+      border-bottom-color: #ed1000; }
 
 .marker-secondary {
   color: #fff; }
@@ -10320,7 +9389,7 @@ textarea.form-control {
     padding: 0;
     color: #1b2e4b; }
     .nav-social .nav-link:hover, .nav-social .nav-link:focus {
-      color: #0168fa; }
+      color: #C80008; }
     .nav-social .nav-link + .nav-link {
       margin-left: 8px; }
     .nav-social .nav-link svg {
@@ -10350,10 +9419,10 @@ textarea.form-control {
       font-size: 11px; }
     .nav-sidebar .nav-link.active {
       font-weight: 500;
-      color: #0168fa;
+      color: #C80008;
       background-color: #eef0f7; }
       .nav-sidebar .nav-link.active svg {
-        color: #0168fa;
+        color: #C80008;
         fill: rgba(1, 104, 250, 0.2); }
     .nav-sidebar .nav-link + .nav-link {
       margin-top: 2px; }
@@ -10366,9 +9435,9 @@ textarea.form-control {
     align-items: center;
     color: #1b2e4b; }
     .nav-classic .nav-link:hover, .nav-classic .nav-link:focus {
-      color: #0168fa; }
+      color: #C80008; }
       .nav-classic .nav-link:hover svg, .nav-classic .nav-link:focus svg {
-        color: #0168fa;
+        color: #C80008;
         fill: rgba(1, 104, 250, 0.2); }
     .nav-classic .nav-link svg {
       width: 18px;
@@ -10387,10 +9456,10 @@ textarea.form-control {
       font-size: 11px; }
     .nav-classic .nav-link.active {
       font-weight: 500;
-      color: #0168fa;
+      color: #C80008;
       background-color: transparent; }
       .nav-classic .nav-link.active svg {
-        color: #0168fa; }
+        color: #C80008; }
     .nav-classic .nav-link + .nav-link {
       margin-top: 10px; }
 
@@ -10449,7 +9518,7 @@ textarea.form-control {
     color: #8392a5; }
     .nav-row-xs .nav-link.active {
       font-weight: 600;
-      color: #0168fa; }
+      color: #C80008; }
     .nav-row-xs .nav-link + .nav-link {
       margin-left: 10px; }
 
@@ -10801,10 +9870,10 @@ textarea.form-control {
     border-bottom-right-radius: 0;
     border-right-width: 0; }
     .search-form .form-control:focus, .search-form .form-control:active {
-      border-color: #0168fa;
+      border-color: #C80008;
       box-shadow: none !important; }
       .search-form .form-control:focus + button, .search-form .form-control:active + button {
-        border-color: #0168fa; }
+        border-color: #C80008; }
   .search-form button {
     display: flex;
     align-items: center;
@@ -10916,17 +9985,17 @@ textarea.form-control {
         .step-item + .step-item::before {
           display: block; } }
   .step-item.active .step-link {
-    color: #0168fa; }
+    color: #C80008; }
   .step-item.active .step-number,
   .step-item.active .step-icon {
-    background-color: #0168fa;
-    border-color: #0168fa;
+    background-color: #C80008;
+    border-color: #C80008;
     color: #fff; }
   .step-item.active ul li.complete a {
-    color: #0168fa;
+    color: #C80008;
     text-decoration: line-through; }
   .step-item.active ul li.active a {
-    color: #0168fa; }
+    color: #C80008; }
   .step-item.active ul li.disabled a {
     color: #97a3b9; }
   .step-item.disabled .step-link {
@@ -11108,7 +10177,7 @@ textarea.form-control {
     display: none; }
 
 .steps-tab .step-item.active .step-link {
-  background-color: #0168fa;
+  background-color: #C80008;
   color: #fff; }
 
 .steps-tab .step-item.active .step-number {
@@ -11185,7 +10254,7 @@ textarea.form-control {
     .nav-tabs .nav-link.active {
       background-color: #fff;
       z-index: 5;
-      color: #0168fa; }
+      color: #C80008; }
     .nav-tabs .nav-link.disabled {
       background-color: transparent;
       color: #b4bdce; }
@@ -11223,7 +10292,7 @@ textarea.form-control {
         left: 0;
         right: 0;
         height: 2px;
-        background-color: #0168fa; }
+        background-color: #C80008; }
   .nav-line.flex-column {
     border-bottom: 0;
     border-right: 2px solid rgba(72, 94, 144, 0.16); }
@@ -11395,7 +10464,7 @@ table.dataTable {
     .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:focus {
       border: 0;
       background-image: none;
-      background-color: #0168fa;
+      background-color: #C80008;
       color: #fff !important; }
 
 /* ###### 3.2 Datepicker ###### */
@@ -11518,7 +10587,7 @@ table.dataTable {
       background-color: #fff;
       color: #001737; }
     .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a, .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a:hover, .ui-datepicker .ui-datepicker-calendar .ui-datepicker-today a:focus {
-      background-color: #0168fa;
+      background-color: #C80008;
       color: #fff; }
     .ui-datepicker .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
       color: #c0ccda;
@@ -11677,12 +10746,12 @@ table.dataTable {
         .wizard > .steps .disabled .title {
           display: inline-block; } }
     .wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
-      color: #0168fa; }
+      color: #C80008; }
       .wizard > .steps .current a .title, .wizard > .steps .current a:hover .title, .wizard > .steps .current a:active .title {
         display: inline-block; }
       .wizard > .steps .current a .number, .wizard > .steps .current a:hover .number, .wizard > .steps .current a:active .number {
-        border-color: #0168fa;
-        background-color: #0168fa;
+        border-color: #C80008;
+        background-color: #C80008;
         color: #fff; }
     .wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
       color: #10b759; }
@@ -11740,7 +10809,7 @@ table.dataTable {
     .wizard > .actions a:hover,
     .wizard > .actions a:active {
       display: block;
-      background-color: #0168fa;
+      background-color: #C80008;
       padding: 9px 20px;
       line-height: 1.539;
       color: #fff;
@@ -11866,7 +10935,7 @@ table.dataTable {
         border-color: #fff;
         color: #fff; }
     .wizard-tab > .steps .current a {
-      background-color: #0168fa; }
+      background-color: #C80008; }
     .wizard-tab > .steps .done a {
       background-color: #10b759; }
     .wizard-tab > .steps .disabled a {
@@ -12120,7 +11189,7 @@ textarea.parsley-success:focus {
     border-radius: 0.25rem; }
     .ql-snow.ql-toolbar .ql-picker-label.ql-active {
       background-color: #eceff3;
-      color: #0168fa; }
+      color: #C80008; }
   .ql-snow.ql-toolbar .ql-formats {
     display: inline-flex; }
     .ql-snow.ql-toolbar .ql-formats .ql-picker {
@@ -12153,7 +11222,7 @@ textarea.parsley-success:focus {
   padding: 5px;
   border-radius: 1px; }
   .ql-bubble .ql-toolbar button.ql-active {
-    background-color: #0168fa; }
+    background-color: #C80008; }
   .ql-bubble .ql-toolbar button + button {
     margin-left: 1px; }
 
@@ -12166,19 +11235,19 @@ textarea.parsley-success:focus {
 .irs--flat .irs-from,
 .irs--flat .irs-to,
 .irs--flat .irs-single {
-  background-color: #0168fa;
+  background-color: #C80008;
   border-radius: 0.25rem; }
   .irs--flat .irs-from::before,
   .irs--flat .irs-to::before,
   .irs--flat .irs-single::before {
-    border-top-color: #0168fa; }
+    border-top-color: #C80008; }
 
 .irs--flat .irs-line {
   background-color: rgba(72, 94, 144, 0.16);
   border-radius: 0.25rem; }
 
 .irs--flat .irs-bar {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .irs--flat .irs-bar--single {
   border-top-left-radius: 0.25rem;
@@ -12281,7 +11350,7 @@ textarea.parsley-success:focus {
     width: 6px; }
 
 .scrollbar-primary > .ps__rail-y > .ps__thumb-y {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .scrollbar-dark > .ps__rail-y > .ps__thumb-y {
   background-color: #1c273c; }
@@ -12341,7 +11410,7 @@ textarea.parsley-success:focus {
     padding: 3px 10px 3px 20px;
     border-color: transparent;
     border-radius: 1px;
-    background-color: #0168fa;
+    background-color: #C80008;
     color: #fff;
     font-size: 13px;
     line-height: 1.45; }
@@ -12370,7 +11439,7 @@ textarea.parsley-success:focus {
   background-color: white; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .select2-container--default .select2-results > .select2-results__options {
   margin: 4px; }
@@ -12525,7 +11594,7 @@ textarea.parsley-success:focus {
   .bootstrap-tagsinput .tag {
     display: inline-flex;
     align-items: center;
-    background-color: #0168fa;
+    background-color: #C80008;
     color: #fff;
     padding: 2px 7px;
     border-radius: 1px; }
@@ -12562,7 +11631,7 @@ textarea.parsley-success:focus {
   padding: 2px 10px; }
   .tt-suggestion:hover, .tt-suggestion:focus {
     cursor: pointer;
-    background-color: #0168fa;
+    background-color: #C80008;
     color: #fff; }
 
 /* ############### PANEL STYLES ############### */
@@ -12641,7 +11710,7 @@ textarea.parsley-success:focus {
       height: 20px;
       stroke-width: 2.5px; }
     .navbar-header .burger-menu:hover {
-      color: #0168fa; }
+      color: #C80008; }
   .navbar-header .btn-social {
     padding: 0;
     font-size: 18px;
@@ -12670,7 +11739,7 @@ textarea.parsley-success:focus {
     margin-left: 15px;
     display: flex;
     align-items: center;
-    color: #0168fa;
+    color: #C80008;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase; }
@@ -12678,10 +11747,10 @@ textarea.parsley-success:focus {
       .navbar-header .btn-buy {
         min-height: inherit;
         padding: 7px 12px;
-        color: #0168fa;
-        border: 2px solid #0168fa; }
+        color: #C80008;
+        border: 2px solid #C80008; }
         .navbar-header .btn-buy:hover, .navbar-header .btn-buy:focus {
-          background-color: #0168fa;
+          background-color: #C80008;
           color: #fff; } }
     .navbar-header .btn-buy .feather {
       width: 18px;
@@ -12875,7 +11944,7 @@ textarea.parsley-success:focus {
         margin-left: 30px; } }
   .navbar-menu .nav-item.active .nav-link {
     position: relative;
-    color: #0168fa; }
+    color: #C80008; }
     .navbar-menu .nav-item.active .nav-link::before {
       content: '';
       position: absolute;
@@ -12883,15 +11952,15 @@ textarea.parsley-success:focus {
       left: 0;
       width: 10px;
       height: 2px;
-      background-color: #0168fa; }
+      background-color: #C80008; }
       @media (min-width: 992px) {
         .navbar-menu .nav-item.active .nav-link::before {
           display: none; } }
     .navbar-menu .nav-item.active .nav-link svg {
-      color: #0168fa;
+      color: #C80008;
       fill: rgba(1, 104, 250, 0.2); }
   .navbar-menu .nav-item.active.with-sub .nav-link::after {
-    border-color: #0168fa; }
+    border-color: #C80008; }
   .navbar-menu .nav-item.with-sub {
     position: relative; }
     .navbar-menu .nav-item.with-sub .nav-link::after {
@@ -12929,9 +11998,9 @@ textarea.parsley-success:focus {
         font-weight: 500;
         padding: 0; } }
     .navbar-menu .nav-link:hover {
-      color: #0168fa; }
+      color: #C80008; }
       .navbar-menu .nav-link:hover svg {
-        color: #0168fa;
+        color: #C80008;
         fill: rgba(1, 104, 250, 0.2); }
     .navbar-menu .nav-link svg {
       width: 18px;
@@ -13038,7 +12107,7 @@ textarea.parsley-success:focus {
     .navbar-menu-sub .nav-sub-link .feather-bar-chart-2 {
       margin-left: -4px; }
     .navbar-menu-sub .nav-sub-link:hover {
-      color: #0168fa; }
+      color: #C80008; }
       .navbar-menu-sub .nav-sub-link:hover svg {
         fill: rgba(1, 104, 250, 0.2); }
   .navbar-menu-sub.navbar-inverse {
@@ -13168,13 +12237,13 @@ textarea.parsley-success:focus {
   .df-logo span {
     display: inline-block;
     font-weight: 400;
-    color: #0168fa; }
+    color: #777777; }
 
 .df-logo-initial {
   width: 40px;
   height: 40px;
-  border: 2px solid #0168fa;
-  color: #0168fa;
+  border: 2px solid #C80008;
+  color: #C80008;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -13246,7 +12315,7 @@ textarea.parsley-success:focus {
       left: 0; }
       @media (min-width: 992px) {
         .sidebar-fixed > .ps__rail-y > .ps__thumb-y {
-          background-color: #0168fa; } }
+          background-color: #C80008; } }
 
 .sidebar-header {
   height: 55px;
@@ -13314,7 +12383,7 @@ textarea.parsley-success:focus {
       fill: rgba(27, 46, 75, 0.06); }
     .sidebar-nav .nav-link.active {
       position: relative;
-      color: #0168fa; }
+      color: #C80008; }
       .sidebar-nav .nav-link.active::before {
         content: '';
         position: absolute;
@@ -13322,13 +12391,13 @@ textarea.parsley-success:focus {
         left: -25px;
         width: 10px;
         height: 2px;
-        background-color: #0168fa; }
+        background-color: #C80008; }
         @media (min-width: 1200px) {
           .sidebar-nav .nav-link.active::before {
             left: -30px;
             width: 13px; } }
       .sidebar-nav .nav-link.active svg {
-        color: #0168fa;
+        color: #C80008;
         fill: rgba(1, 104, 250, 0.2); }
     .sidebar-nav .nav-link.with-sub::after {
       content: '';
@@ -13358,10 +12427,10 @@ textarea.parsley-success:focus {
         .sidebar-nav .nav a {
           font-size: 13px; } }
       .sidebar-nav .nav a:hover {
-        color: #0168fa; }
+        color: #C80008; }
       .sidebar-nav .nav a.active {
         position: relative;
-        color: #0168fa;
+        color: #C80008;
         font-weight: 500; }
         .sidebar-nav .nav a.active::before {
           content: '';
@@ -13369,7 +12438,7 @@ textarea.parsley-success:focus {
           top: 0;
           bottom: 0;
           left: -26px;
-          border-left: 1px solid #0168fa; }
+          border-left: 1px solid #C80008; }
       .sidebar-nav .nav a + a {
         margin-top: 5px; }
 
@@ -13525,7 +12594,7 @@ textarea.parsley-success:focus {
   .aside-logo, .aside-logo:hover, .aside-logo:focus {
     color: #031d6b; }
     .aside-logo span, .aside-logo:hover span, .aside-logo:focus span {
-      color: #0168fa; }
+      color: #C80008; }
 
 .aside-menu-link {
   color: #8392a5; }
@@ -13622,14 +12691,14 @@ textarea.parsley-success:focus {
     position: relative; }
     .nav-aside .nav-item.active .nav-link {
       opacity: 1;
-      color: #0168fa;
+      color: #C80008;
       font-weight: 500; }
       .nav-aside .nav-item.active .nav-link::before {
         opacity: 1;
         visibility: visible;
-        border-left-color: #0168fa; }
+        border-left-color: #C80008; }
     .nav-aside .nav-item.active svg {
-      color: #0168fa;
+      color: #C80008;
       fill: rgba(1, 104, 250, 0.2); }
     .nav-aside .nav-item + .nav-item {
       margin-top: 1px; }
@@ -13647,7 +12716,7 @@ textarea.parsley-success:focus {
         .nav-aside .nav-item ul a:hover, .nav-aside .nav-item ul a:focus {
           color: #1b2e4b; }
       .nav-aside .nav-item ul .active a {
-        color: #0168fa; }
+        color: #C80008; }
   .nav-aside .with-sub .nav-link::after {
     content: '\f3d1';
     font-family: 'Ionicons';
@@ -13824,7 +12893,7 @@ textarea.parsley-success:focus {
     padding: 0;
     color: #1b2e4b; }
     .content-footer a:hover, .content-footer a:focus {
-      color: #0168fa; }
+      color: #C80008; }
     .content-footer a + .nav-link {
       margin-left: 25px; }
   .content-footer > div:last-child {
@@ -13852,7 +12921,7 @@ textarea.parsley-success:focus {
     padding: 0;
     color: #1b2e4b; }
     .footer a:hover, .footer a:focus {
-      color: #0168fa; }
+      color: #C80008; }
     .footer a + .nav-link {
       margin-left: 25px; }
   .footer > div:last-child {
@@ -13939,8 +13008,8 @@ textarea.parsley-success:focus {
     box-shadow: 0 0 0 1px #8392a5; }
   .df-skin.active,
   .df-mode.active {
-    border-color: #0168fa;
-    box-shadow: 0 0 0 1px #0168fa;
+    border-color: #C80008;
+    box-shadow: 0 0 0 1px #C80008;
     position: relative; }
     .df-skin.active::before,
     .df-mode.active::before {
@@ -13953,10 +13022,10 @@ textarea.parsley-success:focus {
       line-height: 0;
       margin-left: -5px;
       margin-top: -1px;
-      color: #0168fa; }
+      color: #C80008; }
     .df-skin.active ~ span,
     .df-mode.active ~ span {
-      color: #0168fa; }
+      color: #C80008; }
   .df-skin.disabled,
   .df-mode.disabled {
     cursor: default;
@@ -13984,7 +13053,7 @@ textarea.parsley-success:focus {
   background-color: #5b47fb; }
 
 .df-skin-gradient1 span:last-child {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .df-skin-name {
   font-size: 9px;
@@ -13998,10 +13067,10 @@ textarea.parsley-success:focus {
 /* ############### UTILITIES/HELPER CLASSES ############### */
 /* ###### 9.1 Background  ###### */
 .bg-brand-01 {
-  background-color: #0168fa; }
+  background-color: #C80008; }
 
 .bg-brand-02 {
-  background-color: #042893; }
+  background-color: #9A0006; }
 
 .bg-brand-03 {
   background-color: #1ce1ac; }
@@ -14289,7 +13358,7 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   border-color: #8392a5; }
 
 .bd-primary {
-  border-color: #0168fa; }
+  border-color: #C80008; }
 
 .bd-success {
   border-color: #10b759; }
@@ -34744,10 +33813,10 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
 
 /* ###### 9.8 Typography   ###### */
 .tx-brand-01 {
-  color: #0168fa !important; }
+  color: #C80008 !important; }
 
 .tx-brand-02 {
-  color: #042893 !important; }
+  color: #9A0006 !important; }
 
 .tx-brand-03 {
   color: #1ce1ac !important; }
@@ -34771,7 +33840,7 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   color: #000; }
 
 .tx-primary {
-  color: #0168fa; }
+  color: #C80008; }
 
 .tx-success {
   color: #10b759; }
