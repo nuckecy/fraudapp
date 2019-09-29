@@ -16,14 +16,11 @@
 .bg-litecoin {
   background-color: #325a98; }
 
-.stroke-wd-3 {
-  stroke-width: 3px; }
+.stroke-wd-3 { stroke-width: 3px; }
+.stroke-wd-2 { stroke-width: 2px; }
 
-.wd-12 {
-  width: 12px; }
-
-.ht-12 {
-  height: 12px; }
+.wd-12 { width: 6px; }
+.ht-12 { height: 6px; }
 
 .chart-one {
   position: relative;
