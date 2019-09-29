@@ -5,6 +5,7 @@
 /tmp
 /assets/fonts
 /lib
+/components
 
 # dependencies
 /node_modules
