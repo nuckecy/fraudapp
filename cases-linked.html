@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="Sterling Bank Fraud Analytics Applications">
+  <title>My Cases - Fraud Analytics</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/sterling_ball.png">
+
+  <!-- vendor css -->
+  <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Page CSS -->
+  <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+  <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/dashforge.css">
+  <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+</head>
+
+<body class="page-profile">
+
+  <header class="navbar navbar-header navbar-header-fixed">
+    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+      <div class="navbar-brand">
+        <a href="home.html" class="df-logo"><img src="assets/images/sterling_ball.svg" width="40px;"
+            style="padding-right: 10px;"><span>Fraud Analytics</span></a>
+      </div><!-- navbar-brand -->
+    <div id="navbarMenu" class="navbar-menu-wrapper">
+      <div class="navbar-menu-header">
+          <a href="home.html" class="df-logo"><img src="assets/images/sterling_ball.svg" width="40px;"
+              style="padding-right: 10px;"><span>Fraud Analytics</span></a>
+          <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+      </div><!-- navbar-menu-header -->
+      <ul class="nav navbar-menu">
+        <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
+        <li class="nav-item active"><a href="home.html" class="nav-link"><i data-feather="box"></i> Discover</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Reports</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Channels</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Rules</a></li>
+      </ul>
+    </div><!-- navbar-menu-wrapper -->
+    <div class="navbar-right">
+      <span id="navbarSearch" href="" class="search-link d-none d-sm-block"><i data-feather="user"></i> Otobong
+        Okoko</span>
+      <div class="dropdown dropdown-profile">
+        <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+          <div class="avatar avatar-sm"><img
+              src="https://media.licdn.com/dms/image/C4E03AQH_VDoBEasRAg/profile-displayphoto-shrink_200_200/0?e=1575504000&v=beta&t=XuGRfGAEjZRglHhg3qLzVjdxU5C53Eqoc_8qUX1edSk"
+              class="rounded-circle" alt=""></div>
+        </a><!-- dropdown-link -->
+        <div class="dropdown-menu dropdown-menu-right tx-13">
+          <div class="avatar avatar-lg mg-b-15"><img
+              src="https://media.licdn.com/dms/image/C4E03AQH_VDoBEasRAg/profile-displayphoto-shrink_200_200/0?e=1575504000&v=beta&t=XuGRfGAEjZRglHhg3qLzVjdxU5C53Eqoc_8qUX1edSk"
+              class="rounded-circle"
+              alt="Otobong Okoko"></div>
+          <h6 class="tx-semibold mg-b-0">Otobong Okoko</h6>
+          <p class="mg-b-5 tx-12 tx-color-03">Investigator</p>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+          <a href="login.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+        </div><!-- dropdown-menu -->
+      </div><!-- dropdown -->
+    </div><!-- navbar-right -->
+  </header><!-- navbar -->
+
+  <div class="content content-fixed">
+    <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+              <li class="breadcrumb-item active" aria-current="page">Fraud Analytics</li>
+              <li class="breadcrumb-item"><a href="home.html">Discover</a></li>
+              <li class="breadcrumb-item"><a href="cases-linked.html">My Cases</a></li>
+            </ol>
+          </nav>
+          <h4 class="mg-b-0 tx-spacing--1">Otobong Linked Cases</h4>
+        </div>
+        <div class="d-none d-md-block">
+          <span class="bd bd-danger rounded pd-10 pd-x-15 btn-uppercase mg-l-5">09:34 | September 30, 2019</span>
+        </div>
+      </div>
+
+      <div class="row row-xs">
+        <div class="col-lg-8 col-xl-9">
+          <div class="card">
+            <div class="card-header pd-b-10 pd-t-10">
+              <h6 class="mg-b-0">My Performance</h6>
+            </div><!-- card-header -->
+            <div class="card-body pd-b-10 pd-t-10">
+              <div class="row row-sm">
+                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Linked</h6>
+                  <a href="cases-linked.html"><h4 class="tx-bold text-success tx-rubik mg-b-0 mg-r-5 lh-1">450</h4></a>
+                </div><!-- col -->
+                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Escalations</h6>
+                  <a href="cases-escalate.html"><h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">125</h4></a>
+                </div><!-- col -->
+                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Inquiries</h6>
+                  <a href="cases-inquires.html"><h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">35</h4></a>
+                </div><!-- col -->
+                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Open</h6>
+                  <a href="cases-open.html"><h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">590</h4></a>
+                </div><!-- col -->
+                <div class="col-6 col-sm-4 col-md mg-t-20 mg-md-t-0 text-center">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Closed</h6>
+                  <a href="cases-closed.html"><h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">789</h4></a>
+                </div><!-- col -->
+              </div><!-- row -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 mg-t-10 mg-lg-t-0">
+          <div class="card">
+            <div class="card-header pd-b-10 pd-t-10">
+              <h6 class="mg-b-0">Case Counts</h6>
+            </div><!-- card-header -->
+            <div class="card-body tx-center pd-b-0 pd-t-10">
+              <div class="row">
+                <div class="col text-left">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Available</h6>
+                  <a href="cases-available.html"><h4 class="tx-bold text-danger tx-rubik tx-spacing--1">4880</h4></a>
+                </div>
+                <div class="col text-right">
+                  <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Linked</h6>
+                  <a href="cases-all-linked.html"><h4 class="tx-normal tx-rubik tx-spacing--1 text-success">1234</h4></a>
+                </div>
+              </div>
+            </div><!-- card-body -->
+          </div>
+        </div>
+        <!-- Tier 1 -->
+
+        <div class="container-fluid mg-t-10">
+          <div class="card">
+            <div class="card-header d-flex align-items-start justify-content-between pd-b-10 pd-t-10">
+              <div>
+                <h5 class="mg-b-0 tx-bold text-uppercase">My Linked Cases</h5>
+              </div>
+            </div><!-- card-header -->
+            <div class="card-body pd-lg-25">
+              <div class="row align-items-sm-end">
+                <div class="col-lg-12 col-xl-12">
+                    <div data-label="Example" class="df-example demo-table">
+                        <table id="example2" class="table">
+                            <thead>
+                                <tr>
+                                    <th data-priority="1" class="wd-15p">Customer Name</th>
+                                    <th class="wd-10p">Channel</th>
+                                    <th class="wd-3p">Account #</th>
+                                    <th class="wd-2p">Cust. ID</th>
+                                    <th class="wd-2p">Amount</th>
+                                    <th data-priority="2" class="wd-10p">Date/Time</th>
+                                    <th class="wd-2p">Rule</th>
+                                    <th class="wd-2p text-center">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="case-1.html">WOMI OFEM PETER</a></td>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="channel-1.html">Sterling OnePay</a></td>
+                                    <td class="tx-light tx-12">0064990447</td>
+                                    <td class="tx-light tx-12">23675443</td>
+                                    <td class="tx-bold tx-12">N423,323</td>
+                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip" data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2</td>
+                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip" data-placement="top" title="New Case"><a href="case-1.html" class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="case-1.html">OLUDELE ADURAGBEMI AKINTOLA</a></td>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="channel-1.html">Mobile Banking MFINO</a></td>
+                                    <td class="tx-light tx-12">0059477108</td>
+                                    <td class="tx-light tx-12">10230104</td>
+                                    <td class="tx-bold tx-12">N10,233,323</td>
+                                    <td class="tx-light tx-12">09/06/2018 11:52:28</td>
+                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip" data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 5</td>
+                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip" data-placement="top" title="New Case"><a href="case-1.html" class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="case-1.html">MARYAM ABIOLA TOLASE</a></td>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="channel-1.html">Sterling OnePay</a></td>
+                                    <td class="tx-light tx-12">0064990447</td>
+                                    <td class="tx-light tx-12">23675443</td>
+                                    <td class="tx-bold tx-12">N423,323</td>
+                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip" data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2</td>
+                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip" data-placement="top" title="New Case"><a href="case-1.html" class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="case-1.html">Oluwaseun Akanbi</a></td>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="channel-1.html">Sterling OnePay</a></td>
+                                    <td class="tx-light tx-12">0064990447</td>
+                                    <td class="tx-light tx-12">23675443</td>
+                                    <td class="tx-bold tx-12">N423,323</td>
+                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip" data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2</td>
+                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip" data-placement="top" title="New Case"><a href="case-1.html" class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="case-1.html">John Doe Afolabi</a></td>
+                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a href="channel-1.html">ATM TRF/CASH WTD</a></td>
+                                    <td class="tx-light tx-12">0059477108</td>
+                                    <td class="tx-light tx-12">10230104</td>
+                                    <td class="tx-bold tx-12">N10,233,323</td>
+                                    <td class="tx-light tx-12">04/26/2018 11:52:28</td>
+                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip" data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1</td>
+                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip" data-placement="top" title="New Case"><a href="case-1.html"  class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div><!-- df-example -->
+                </div>
+              </div>
+            </div><!-- card-body -->
+          </div><!-- card -->
+        </div>
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- content -->
+
+
+  <footer class="footer">
+    <div>
+      <span>&copy; 2019 Sterling Plc - FraudApp v1.0.0. </span>
+    </div>
+    <div>
+      <!-- 
+          <nav class="nav">
+          <a href="#" class="nav-link"></a>
+          </nav> 
+        -->
+    </div>
+  </footer>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- Page Styles -->
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+
+    <script src="assets/js/dashforge.js"></script>
+
+    <script>
+        $(function () {
+            'use strict'
+
+            $('#example2').DataTable({
+                responsive: true,
+                language: {
+                    searchPlaceholder: 'Search...',
+                    sSearch: '',
+                    lengthMenu: '_MENU_ items/page',
+                },
+                columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 2, targets: -1 }
+                ],
+                "order": [[ 7, "desc" ]]
+            });
+
+            // Initialize ToolTip
+            $('[data-toggle="tooltip"]').tooltip();
+            
+
+        });
+    </script>
+</body>
+
+</html>

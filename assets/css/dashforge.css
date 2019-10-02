@@ -36314,6 +36314,24 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
     text-align: left !important; } }
 
 /* ###### 9.9 Width   ###### */
+/* Custom Widths  */
+
+.wd-2p {
+  width: 2%;
+}
+.wd-3p {
+  width: 3%;
+}
+.wd-4p {
+  width: 4%;
+}
+.wd-8p {
+  width: 8%;
+}
+.wd-12p {
+  width: 12%;
+}
+/* Custom Widths */
 .wd-5 {
   width: 5px; }
 
