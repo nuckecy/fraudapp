@@ -36,7 +36,7 @@
 
 .switchToggle input+label:before,
 .switchToggle input+input+label:before {
-    content: 'No';
+    content: 'Off';
     position: absolute;
     top: 5px;
     left: 35px;
@@ -50,7 +50,7 @@
 
 .switchToggle input:checked+label:before,
 .switchToggle input:checked+input+label:before {
-    content: 'Yes';
+    content: 'On';
     position: absolute;
     top: 5px;
     left: 10px;
