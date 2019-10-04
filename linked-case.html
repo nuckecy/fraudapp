@@ -22,7 +22,11 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.auth.css">
-    <link rel="stylesheet" href="lib/animate.css/animate.min.css">
+    <!-- <link rel="stylesheet" href="lib/animate.css/animate.min.css"> -->
+
+    <link href="lib/quill/quill.core.css" rel="stylesheet">
+    <link href="lib/quill/quill.snow.css" rel="stylesheet">
+    <link href="lib/quill/quill.bubble.css" rel="stylesheet">
 </head>
 
 <body class="page-profile">
@@ -142,10 +146,8 @@
                                     <div class="d-flex justify-content-between">
                                         <div class="pd-l-10 pd-r-10">
                                             <div class="row">
-                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-danger text-uppercase animated bounce">
-                                                    
-                                                </button></div>
-                                                div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-danger text-uppercase animated bounce">Truncate</button></div>
+                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-danger text-uppercase animated bounce">Truncate</button></div>
+                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-success text-uppercase animated bounce">Release</button></div>
                                                 <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-warning text-uppercase animated bounce">Escalate</button></div>
                                             </div>
                                         </div>
@@ -176,77 +178,58 @@
                                 <div class="pd-10 flex-grow-1">
                                     <button type="button" class="btn btn-xs bg-gray-100 text-uppercase animated bounce">Linked to Otobong Okoko</button>
                                 </div>
-                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-outline-dark text-uppercase animated bounce"><i data-feather=""></i> 5 Comments</button></div>
+                                
+                                <div class="pd-y-10 pd-x-3">
+                                    <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#modalEditor">Add Comment</button>
+                                </div>
                             </div>
                         </div>
                     </div><!-- card -->
 
                     <!-- Visibility Area -->
 
-                    <div>
-                        
-                        <div class="media-body">
+                    <!-- Modal For Comment -->
+                    <div id="modalEditor" class="modal">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pd-l-45 pd-b-0">
+                                    <h3 class="modal-title">Add a Comment</h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div><!-- modal-header -->
+                                <form action="">
+                                <div class="modal-body pd-0">
+                                    <div class="d-flex flex-column ht-200 pd-t-20 pd-b-10 pd-r-40 pd-l-40">
+                                        <textarea class="form-control" rows="7" placeholder="Enter your comment in this space"></textarea>
+                                    </div>
+                                </div><!-- modal-body -->
+                                <div class="modal-footer pd-t-0 pd-r-40 pd-l-40 bd-t-0 tx-13">
+                                    <button type="button" class="btn btn-primary">Save Comment</button>
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                </div>
+                                </form>
+                            </div><!-- modal-content -->
+                        </div><!-- modal-dialog -->
+                    </div>
+                    <!-- End Modal -->
+
+                    <div class="mg-t-10 card">
+                        <div class="card-header pd-b-10 pd-t-10">
+                            <h6 class="mg-b-0">Case Comments (5)</h6>
+                        </div><!-- card-header -->
+                        <div class="card-body">
                             <div class="timeline-group tx-13">
-                                <div class="timeline-label">Comments</div>
-                                
                                 <div class="timeline-item">
-                                    <div class="timeline-time">10:30pm</div>
                                     <div class="timeline-body">
-                                        <h6 class="mg-b-0">Building a Simple User Interface</h6>
-                                        <p><a href="">Elisse Joson</a> San Francisco, CA</p>
-
+                                        <h6 class="mg-b-0">Otobong Okoko - Investigator</h6>
                                         <p>In this lesson, you create a layout in XML that includes a text field and a
-                                            button. In the next lesson, your app responds when the </p>
+                                            button. In the next lesson, your app responds when the It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
                                         <nav class="nav nav-row mg-t-15">
-                                            <a href="" class="nav-link">Like</a>
-                                            <a href="" class="nav-link">Comment</a>
-                                        </nav>
-                                    </div><!-- timeline-body -->
-                                </div><!-- timeline-item -->
-
-                                <div class="timeline-item">
-                                    <div class="timeline-time">03:30pm</div>
-                                    <div class="timeline-body">
-                                        <h6 class="mg-b-0">Your Finances Don't Have to Be Perfect to Work</h6>
-                                        <p><a href="">Elisse Joson</a> San Francisco, CA</p>
-
-                                        <p>In this lesson, you create a layout in XML that includes a text field and a
-                                            button. In the next lesson, your app responds when the lorem ipsum dolor sit
-                                            amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                                            massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                        <nav class="nav nav-row mg-t-15">
-                                            <a href="" class="nav-link">Like</a>
-                                            <a href="" class="nav-link">Comment</a>
-                                        </nav>
-                                    </div><!-- timeline-body -->
-                                </div><!-- timeline-item -->
-
-                                <div class="timeline-item">
-                                    <div class="timeline-time">06:30pm</div>
-                                    <div class="timeline-body">
-                                        <h6 class="mg-b-0">An Engineer Explains Why You Should Always Order the Larger Pizza</h6>
-                                        <p><a href="">Elisse Joson</a> San Francisco, CA</p>
-
-                                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-
-                                        <nav class="nav nav-row mg-t-15">
-                                            <a href="" class="nav-link">Like</a>
-                                            <a href="" class="nav-link">Comment</a>
-                                        </nav>
-                                    </div><!-- timeline-body -->
-                                </div><!-- timeline-item -->
-
-                                <div class="timeline-item">
-                                    <div class="timeline-time">01:15pm</div>
-                                    <div class="timeline-body">
-                                        <h6 class="mg-b-0">The Strange Persistence of First Languages</h6>
-                                        <p><a href="">Elisse Joson</a> San Francisco, CA</p>
-
-                                        <p>In this lesson, you create a layout in XML that includes a text field and a
-                                            button. In the next lesson, your app responds when the world.</p>
-                                        <nav class="nav nav-row mg-t-15">
-                                            <a href="" class="nav-link">Like</a>
-                                            <a href="" class="nav-link">Comment</a>
+                                            <span class="nav-link">04 October, 2019</span>
                                         </nav>
                                     </div><!-- timeline-body -->
                                 </div><!-- timeline-item -->
@@ -428,6 +411,7 @@
 
         })
     </script>
+
 </body>
 
 </html>
