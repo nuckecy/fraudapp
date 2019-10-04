@@ -1,9 +1,4 @@
-/*
- * Dashforge Auth Pages (Signin, Signup, etc.)
- *
- * This style is use in auth pages.
- *
- */
+
 .content-auth {
   min-height: calc(100vh - 106px);
   display: flex;

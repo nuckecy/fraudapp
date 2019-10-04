@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
     <link rel="stylesheet" href="assets/css/dashforge.auth.css">
-    <!-- <link rel="stylesheet" href="lib/animate.css/animate.min.css"> -->
 
-    <link href="lib/quill/quill.core.css" rel="stylesheet">
-    <link href="lib/quill/quill.snow.css" rel="stylesheet">
-    <link href="lib/quill/quill.bubble.css" rel="stylesheet">
+    <!-- Page CSS -->
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 </head>
 
 <body class="page-profile">
@@ -86,11 +87,10 @@
                             <li class="breadcrumb-item"><a href="case-1.html">Case</a></li>
                         </ol>
                     </nav>
-                    <h4 class="mg-b-0 tx-spacing--1">Case : </h4>
+                    <!-- <h4 class="mg-b-0 tx-spacing--1">Case : </h4> -->
                 </div>
                 <div class="d-none d-md-block">
-                    <span class="bd bd-danger rounded pd-10 pd-x-15 btn-uppercase mg-l-5">09:34 | September 30,
-                        2019</span>
+                    <span class="bd bd-danger rounded pd-10 pd-x-15 btn-uppercase mg-l-5">09:34 | September 30, 2019</span>
                 </div>
             </div>
 
@@ -98,10 +98,83 @@
 
                 <div class="col-lg-8 col-xl-9">
                     <div class="card">
+                        <div class="card-header pd-b-10 pd-t-10">
+                            <h6 class="mg-b-0">My Performance</h6>
+                        </div><!-- card-header -->
+                        <div class="card-body pd-b-10 pd-t-10">
+                            <div class="row row-sm">
+                                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Linked</h6>
+                                    <a href="cases-linked.html">
+                                        <h4 class="tx-bold text-success tx-rubik mg-b-0 mg-r-5 lh-1">450</h4>
+                                    </a>
+                                </div><!-- col -->
+                                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Escalations
+                                    </h6>
+                                    <a href="cases-escalate.html">
+                                        <h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">125</h4>
+                                    </a>
+                                </div><!-- col -->
+                                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Inquiries
+                                    </h6>
+                                    <a href="cases-inquires.html">
+                                        <h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">35</h4>
+                                    </a>
+                                </div><!-- col -->
+                                <div class="col-6 col-sm-4 col-md mg-t-20 mg-sm-t-0 text-center">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Open</h6>
+                                    <a href="cases-open.html">
+                                        <h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">590</h4>
+                                    </a>
+                                </div><!-- col -->
+                                <div class="col-6 col-sm-4 col-md mg-t-20 mg-md-t-0 text-center">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Closed</h6>
+                                    <a href="cases-closed.html">
+                                        <h4 class="tx-light tx-rubik mg-b-0 mg-r-5 lh-1 text-danger">789</h4>
+                                    </a>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mg-t-10 mg-lg-t-0">
+                    <div class="card">
+                        <div class="card-header pd-b-10 pd-t-10">
+                            <h6 class="mg-b-0">Case Counts</h6>
+                        </div><!-- card-header -->
+                        <div class="card-body tx-center pd-b-0 pd-t-10">
+                            <div class="row">
+                                <div class="col text-left">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Available
+                                    </h6>
+                                    <a href="cases-available.html">
+                                        <h4 class="tx-bold text-danger tx-rubik tx-spacing--1">4880</h4>
+                                    </a>
+                                </div>
+                                <div class="col text-right">
+                                    <h6 class="tx-uppercase tx-13 tx-spacing-1 tx-color-03 mg-b-0">Linked</h6>
+                                    <a href="cases-all-linked.html">
+                                        <h4 class="tx-normal tx-rubik tx-spacing--1 text-success">1234</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- card-body -->
+                    </div>
+                </div>
+                <!-- Tier 1 -->
+
+                <div class="col-lg-8 col-xl-9 mg-t-10">
+                    <div class="card">
                         <div class="card-header pd-r-60 pd-l-60">
                             <div class="d-flex flex-row justify-content-between">
-                                <div class="mg-b-0"><span class="btn btn-danger btn-xs rounded-pill text-uppercase pd-x-10 pd-y-0 tx-12">Sterling OnePay</span></div>
-                                <div class="mg-b-0"><span class="btn btn-outline-danger btn-xs rounded-pill text-uppercase pd-x-10 pd-y-0 tx-8 pd-t-2 mg-r-5">critical</span> <span class="tx-11">NEW_USER_TO_NEW_BENEFICIARY </span></div>
+                                <div class="mg-b-0"><span
+                                        class="btn btn-danger btn-xs rounded-pill text-uppercase pd-x-10 pd-y-0 tx-12">Sterling
+                                        OnePay</span></div>
+                                <div class="mg-b-0"><span
+                                        class="btn btn-outline-danger btn-xs rounded-pill text-uppercase pd-x-10 pd-y-0 tx-8 pd-t-2 mg-r-5">critical</span>
+                                    <span class="tx-11">NEW_USER_TO_NEW_BENEFICIARY </span></div>
                             </div>
                         </div><!-- card-header -->
                         <div class="card-body pd-lg-25">
@@ -109,36 +182,56 @@
                                 <div class="col-lg-12 col-xl-12 pd-l-50 pd-r-50">
                                     <div class="row">
                                         <div class="col-sm">
-                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">customer information</p>
-                                            <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-5">Abdulrahman Oluwasegun Balogun</h5>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Email:</span> abalogun@gmail.com</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">mobile:</span> 0802418004</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Customer ID:</span> 418004</div>
+                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">
+                                                customer information</p>
+                                            <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-5">Abdulrahman Oluwasegun
+                                                Balogun</h5>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Email:</span> abalogun@gmail.com
+                                            </div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">mobile:</span> 0802418004</div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Customer ID:</span> 418004</div>
                                         </div><!-- col -->
                                         <div class="divider-text divider-vertical" data-text="and"></div>
                                         <div class="col-sm pd-sm-l-60">
-                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">Account information</p>
+                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">
+                                                Account information</p>
                                             <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-0">0059477108</h5>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Branch:</span> OTA</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Region:</span> IKORODU & BEYOND</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Acc. Created:</span> 0802418004 </div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Branch:</span> OTA</div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Region:</span> IKORODU & BEYOND
+                                            </div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Acc. Created:</span> 0802418004
+                                            </div>
                                         </div><!-- col -->
                                     </div>
                                     <div class="pd-20"></div>
                                     <div class="row pd-b-20">
                                         <div class="col-sm">
-                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">Beneficiary information</p>
-                                            <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-5">Asibor Terry Idiaghe</h5>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Acc. #:</span> 0003999152</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">BAnk:</span> Access Bank</div>
+                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">
+                                                Beneficiary information</p>
+                                            <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-5">Asibor Terry Idiaghe
+                                            </h5>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Acc. #:</span> 0003999152</div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">BAnk:</span> Access Bank</div>
                                         </div><!-- col -->
                                         <div class="divider-text divider-vertical" data-text="and"></div>
                                         <div class="col-sm pd-sm-l-60">
-                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary"> Transaction information</p>
+                                            <p class="tx-11 tx-uppercase tx-spacing-1 tx-semibold mg-b-10 tx-primary">
+                                                Transaction information</p>
                                             <h5 class="tx-normal tx-rubik tx-spacing--1 mg-b-0">N450,00.00</h5>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">TXN ID:</span> 2987157</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">REF. ID:</span> 1501356704</div>
-                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">Date/TIME</span> 04/26/2018
+                                            <div class="tx-12 tx-color-03"><span class="tx-secondary text-uppercase">TXN
+                                                    ID:</span> 2987157</div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">REF. ID:</span> 1501356704</div>
+                                            <div class="tx-12 tx-color-03"><span
+                                                    class="tx-secondary text-uppercase">Date/TIME</span> 04/26/2018
                                             </div>
                                         </div><!-- col -->
                                     </div>
@@ -146,9 +239,15 @@
                                     <div class="d-flex justify-content-between">
                                         <div class="pd-l-10 pd-r-10">
                                             <div class="row">
-                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-danger text-uppercase animated bounce">Truncate</button></div>
-                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-success text-uppercase animated bounce">Release</button></div>
-                                                <div class="pd-y-10 pd-x-3"><button type="button" class="btn btn-xs btn-warning text-uppercase animated bounce">Escalate</button></div>
+                                                <div class="pd-y-10 pd-x-3"><button type="button"
+                                                        class="btn btn-xs btn-danger text-uppercase animated bounce">Truncate</button>
+                                                </div>
+                                                <div class="pd-y-10 pd-x-3"><button type="button"
+                                                        class="btn btn-xs btn-warning text-uppercase animated bounce">Escalate</button>
+                                                </div>
+                                                <div class="pd-y-10 pd-x-3"><button type="button"
+                                                        class="btn btn-xs btn-success text-uppercase animated bounce">Release</button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="pd-0">
@@ -176,11 +275,14 @@
                         <div class="card-footer tx-13 bg-gray-300 pd-0">
                             <div class="d-flex pd-l-50 pd-r-50">
                                 <div class="pd-10 flex-grow-1">
-                                    <button type="button" class="btn btn-xs bg-gray-100 text-uppercase animated bounce">Linked to Otobong Okoko</button>
+                                    <button type="button"
+                                        class="btn btn-xs bg-gray-100 text-uppercase animated bounce">Linked to Otobong Okoko</button>
                                 </div>
-                                
+
                                 <div class="pd-y-10 pd-x-3">
-                                    <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#modalEditor">Add Comment</button>
+                                    <button class="btn btn-xs btn-info" data-toggle="modal"
+                                        data-target="#modalEditor">Add Comment</button>
+                                    <button class="btn btn-xs btn-danger">Close Case</button>
                                 </div>
                             </div>
                         </div>
@@ -199,52 +301,183 @@
                                     </button>
                                 </div><!-- modal-header -->
                                 <form action="">
-                                <div class="modal-body pd-0">
-                                    <div class="d-flex flex-column ht-200 pd-t-20 pd-b-10 pd-r-40 pd-l-40">
-                                        <textarea class="form-control" rows="7" placeholder="Enter your comment in this space"></textarea>
+                                    <div class="modal-body pd-0">
+                                        <div class="d-flex flex-column ht-200 pd-t-20 pd-b-10 pd-r-40 pd-l-40">
+                                            <textarea class="form-control" rows="7"
+                                                placeholder="Enter your comment in this space"></textarea>
+                                        </div>
+                                    </div><!-- modal-body -->
+                                    <div class="modal-footer pd-t-0 pd-r-40 pd-l-40 bd-t-0 tx-13">
+                                        <button type="button" class="btn btn-primary">Save Comment</button>
+                                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
                                     </div>
-                                </div><!-- modal-body -->
-                                <div class="modal-footer pd-t-0 pd-r-40 pd-l-40 bd-t-0 tx-13">
-                                    <button type="button" class="btn btn-primary">Save Comment</button>
-                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
-                                </div>
                                 </form>
                             </div><!-- modal-content -->
                         </div><!-- modal-dialog -->
                     </div>
                     <!-- End Modal -->
 
-                    <div class="mg-t-10 card">
-                        <div class="card-header pd-b-10 pd-t-10">
-                            <h6 class="mg-b-0">Case Comments (5)</h6>
-                        </div><!-- card-header -->
-                        <div class="card-body">
-                            <div class="timeline-group tx-13">
-                                <div class="timeline-item">
-                                    <div class="timeline-body">
-                                        <h6 class="mg-b-0">Otobong Okoko - Investigator</h6>
-                                        <p>In this lesson, you create a layout in XML that includes a text field and a
-                                            button. In the next lesson, your app responds when the It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                        </p>
-                                        <nav class="nav nav-row mg-t-15">
-                                            <span class="nav-link">04 October, 2019</span>
-                                        </nav>
-                                    </div><!-- timeline-body -->
-                                </div><!-- timeline-item -->
+                    <div class="mg-t-20">
+                        <div class="tabs">
+                            <div class="tab">
+                                <input type="checkbox" id="chck1">
+                                <label class="tab-label" for="chck1">Case Comments (5)</label>
+                                <div class="tab-content">
+                                    <div class="card-body">
+                                        <div class="timeline-body">
+                                            <h6 class="mg-b-0 tx-uppercase tx-primary">Otobong Okoko - Investigator</h6>
+                                            <p>In this lesson, you create a layout in XML that includes a text
+                                                field and a
+                                                button. In the next lesson, your app responds when the It has
+                                                survived not only five centuries, but
+                                                also the leap into electronic typesetting, remaining essentially
+                                                unchanged.
+                                                It was popularised in the 1960s with the release of Letraset
+                                                sheets containing Lorem Ipsum passages,
+                                                and more recently
+                                                with desktop publishing software like Aldus PageMaker including
+                                                versions of Lorem Ipsum.
+                                            </p>
+                                            <nav class="nav nav-row mg-t-15">
+                                                <span class="nav-link">04 October, 2019</span>
+                                            </nav>
+                                        </div><!-- timeline-body -->
 
-                            </div><!-- timeline-group -->
+                                    </div><!-- media-body -->
+                                </div>
+                            </div>
+                        </div>
 
-                        </div><!-- media-body -->
                     </div>
 
                     <!-- End Visibility Area -->
 
+                    <div class="card mg-t-10">
+                        <div class="card-header d-flex align-items-start justify-content-between pd-b-10 pd-t-10">
+                            <div>
+                                <h5 class="mg-b-0 tx-bold text-uppercase">Data Section</h5>
+                            </div>
+                        </div><!-- card-header -->
+                        <div class="card-body pd-lg-0">
+                            <div class="row align-items-sm-end">
+                                <div class="col-lg-12 col-xl-12">
+                                    <div data-label="Example" class="df-example demo-table">
+                                        <table id="example2" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th data-priority="1" class="wd-15p">Customer Name</th>
+                                                    <th class="wd-10p">Channel</th>
+                                                    <th class="wd-3p">Account #</th>
+                                                    <th class="wd-2p">Cust. ID</th>
+                                                    <th class="wd-2p">Amount</th>
+                                                    <th data-priority="2" class="wd-10p">Date/Time</th>
+                                                    <th class="wd-2p">Rule</th>
+                                                    <th class="wd-2p text-center">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="case-1.html">WOMI OFEM PETER</a></td>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="channel-1.html">Sterling OnePay</a></td>
+                                                    <td class="tx-light tx-12">0064990447</td>
+                                                    <td class="tx-light tx-12">23675443</td>
+                                                    <td class="tx-bold tx-12">N423,323</td>
+                                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                        data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                    </td>
+                                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                        data-placement="top" title="New Case"><a href="case-1.html"
+                                                            class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="case-1.html">OLUDELE ADURAGBEMI AKINTOLA</a></td>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="channel-1.html">Mobile Banking MFINO</a></td>
+                                                    <td class="tx-light tx-12">0059477108</td>
+                                                    <td class="tx-light tx-12">10230104</td>
+                                                    <td class="tx-bold tx-12">N10,233,323</td>
+                                                    <td class="tx-light tx-12">09/06/2018 11:52:28</td>
+                                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                        data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 5
+                                                    </td>
+                                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                        data-placement="top" title="New Case"><a href="case-1.html"
+                                                            class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="case-1.html">MARYAM ABIOLA TOLASE</a></td>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="channel-1.html">Sterling OnePay</a></td>
+                                                    <td class="tx-light tx-12">0064990447</td>
+                                                    <td class="tx-light tx-12">23675443</td>
+                                                    <td class="tx-bold tx-12">N423,323</td>
+                                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                        data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                    </td>
+                                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                        data-placement="top" title="New Case"><a href="case-1.html"
+                                                            class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="case-1.html">Oluwaseun Akanbi</a></td>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="channel-1.html">Sterling OnePay</a></td>
+                                                    <td class="tx-light tx-12">0064990447</td>
+                                                    <td class="tx-light tx-12">23675443</td>
+                                                    <td class="tx-bold tx-12">N423,323</td>
+                                                    <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                        data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                    </td>
+                                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                        data-placement="top" title="New Case"><a href="case-1.html"
+                                                            class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="case-1.html">John Doe Afolabi</a></td>
+                                                    <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                            href="channel-1.html">ATM TRF/CASH WTD</a></td>
+                                                    <td class="tx-light tx-12">0059477108</td>
+                                                    <td class="tx-light tx-12">10230104</td>
+                                                    <td class="tx-bold tx-12">N10,233,323</td>
+                                                    <td class="tx-light tx-12">04/26/2018 11:52:28</td>
+                                                    <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                        data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                    </td>
+                                                    <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                        data-placement="top" title="New Case"><a href="case-1.html"
+                                                            class="text-success"><i class="fas fa-link"></i> Linked</a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div><!-- df-example -->
+                                </div>
+                            </div>
+                        </div><!-- card-body -->
+                    </div><!-- card -->
+                
                 </div>
 
 
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3  mg-t-10">
                     <div class="card">
                         <div class="card-header pd-b-10 pd-t-10">
                             <h6 class="mg-b-0">Case By Channel</h6>
@@ -255,7 +488,8 @@
                         <div class="card-footer pd-20 mb-2">
                             <div class="row">
                                 <div class="col-6">
-                                    <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 tx-nowrap mg-b-5">USSD</p>
+                                    <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 tx-nowrap mg-b-5">
+                                        USSD</p>
                                     <div class="d-flex align-items-center">
                                         <div class="wd-10 ht-10 rounded-circle bg-danger mg-r-5"></div>
                                         <h5 class="tx-normal tx-rubik mg-b-0">1,320 <small
@@ -263,17 +497,20 @@
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 mg-b-5">Web-Thirdparty</p>
+                                    <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 mg-b-5">
+                                        Web-Thirdparty</p>
                                     <div class="d-flex align-items-center">
                                         <div class="wd-10 ht-10 rounded-circle bg-danger mg-r-5"></div>
-                                        <h5 class="tx-normal tx-rubik mg-b-0">987 <small class="tx-color-04">20%</small></h5>
+                                        <h5 class="tx-normal tx-rubik mg-b-0">987 <small class="tx-color-04">20%</small>
+                                        </h5>
                                     </div>
                                 </div>
                                 <div class="col-6 mg-t-20">
                                     <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 mg-b-5">POS</p>
                                     <div class="d-flex align-items-center">
                                         <div class="wd-10 ht-10 rounded-circle bg-danger mg-r-5"></div>
-                                        <h5 class="tx-normal tx-rubik mg-b-0">2,010 <small class="tx-color-04">30%</small></h5>
+                                        <h5 class="tx-normal tx-rubik mg-b-0">2,010 <small
+                                                class="tx-color-04">30%</small></h5>
                                     </div>
                                 </div>
                                 <div class="col-6 mg-t-20">
@@ -363,10 +600,20 @@
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/feather-icons/feather.min.js"></script>
     <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
     <script src="lib/chart.js/Chart.bundle.min.js"></script>
     <script src="lib/jquery.flot/jquery.flot.js"></script>
     <script src="lib/jquery.flot/jquery.flot.stack.js"></script>
     <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+
+    <!-- Page Styles -->
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
 
     <script src="assets/js/dashforge.js"></script>
     <script src="assets/js/dashforge.sampledata.js"></script>
@@ -409,6 +656,9 @@
                 options: optionpie
             });
 
+            $('#accordion').accordion({
+                heightStyle: 'content'
+            });
         })
     </script>
 
