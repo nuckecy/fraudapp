@@ -20,11 +20,14 @@
 
     <!-- Page CSS -->
     <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="assets/css/dashforge.css">
     <link rel="stylesheet" href="assets/css/dashforge.profile.css">
-    <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/dashforge.au.css">
 
 </head>
 
@@ -428,993 +431,261 @@
 
             </div><!-- row 2 --><!-- Tier 2 -->
 
-            <div class="row row-xs">
-                <div class="card mg-t-20">
-                    <div class="card-header d-flex align-items-start justify-content-between pd-b-5 pd-t-5">
-                            <h5 class="mg-b-0 tx-bold text-uppercase">Data Section</h5>
-                    </div><!-- card-header -->
-                    <div class="card-body pd-0 pd-t-0">
-                        <div class="row">
-                            <div class="mg-t-0 mg-r-10 mg-l-10 mg-b-0">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr class="tx-12 bg-gray-900 tx-white tx-bold">
-                                            <th data-priority="1" class="wd-10p" scope="col">Txn Date</th>
-                                            <th scope="col">Txn Amt</th>
-                                            <th scope="col">Remarks</th>
-                                            <th scope="col">DR/CR</th>
-                                            <th scope="col">Txn Reference</th>
-                                            <th data-priority="2" class="wd-10p" scope="col">Value Date</th>
-                                            <th scope="col">Balance</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/18/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                26,200.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011904181621876/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO refund for
-                                                jerseys/swift/OLAMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT191080YHCT-SBN</td>
-                                            <td class="tx-light tx-12">4/18/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27615.11
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                12.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                AP/RIL</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19113SLYH6-KNR</td>
-                                            <td class="tx-light tx-12">4/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27603.11
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                A/PRIL 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19113GQTS1</td>
-                                            <td class="tx-light tx-12">4/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27553.11
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR APRI/L 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19113QWX6P</td>
-                                            <td class="tx-light tx-12">4/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27550.61
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4,500.00
-                                            </td>
-                                            <td class="tx-light tx-12">POS CLRNG - LOCAL - VERVE/OTHER
-                                                BANK TERMINAL - /SEDABUK LIMITED(MUSH LA / LANG</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19113ZWQ17</td>
-                                            <td class="tx-light tx-12">4/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                23050.61
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/29/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,350.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011904282057999/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO Birthday
-                                                gift from/Mary/OLAMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19119VCF2T-SBN</td>
-                                            <td class="tx-light tx-12">4/29/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                25400.61
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/29/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4,500.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011904282103219/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO fuel
-                                                refund/OLAMID/E.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19119JZNFC-SBN</td>
-                                            <td class="tx-light tx-12">4/29/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                29900.61
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                4/30/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                60.85
-                                            </td>
-                                            <td class="tx-light tx-12">Credit Interest//CAPITALISE
-                                                ACTIVITY FOR SCHEDULE/</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">AAACT191202YFW2J9Q</td>
-                                            <td class="tx-light tx-12">4/30/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                29961.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                5/6/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011905051743331/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO May
-                                                2019/OLAMIDE.O/J/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT1912630D1C-SBN</td>
-                                            <td class="tx-light tx-12">5/6/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                31961.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                5/13/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                30,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">ANUOLUWAPO OMOSILEOLA
-                                                JOLAOSO/Onepay/0000010000011905122212545/On/line to
-                                                Sterling Bank ANUOLUWAPO OM/OSILEOLA JOLAOSO Dr Taiwo s
-                                                researc/h group /JEDIDIAH.OJ/ANUOLUWAPO.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19133YZHQW-SBN</td>
-                                            <td class="tx-light tx-12">5/13/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1961.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                5/20/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                M/AY 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT191402TQ32</td>
-                                            <td class="tx-light tx-12">5/20/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1911.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                5/20/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR MAY/2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT191400YBJ0</td>
-                                            <td class="tx-light tx-12">5/20/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1908.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                5/20/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                24.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                MA/Y</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19140KR7N8-PH5</td>
-                                            <td class="tx-light tx-12">5/20/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1884.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/3/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011906010601935/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO May
-                                                2019/OLAMIDE.O/J/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19154Z2L06-SBN</td>
-                                            <td class="tx-light tx-12">6/3/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                3884.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/3/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                30,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011906011421201/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO Refund for
-                                                Dr Taiw/o /OLAMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19154K3CK6-SBN</td>
-                                            <td class="tx-light tx-12">6/3/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                33884.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/4/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                30,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">ANUOLUWAPO OMOSILEOLA
-                                                JOLAOSO/Onepay/0000010000011906051009142/On/line to
-                                                Sterling Bank ANUOLUWAPO OM/OSILEOLA JOLAOSO For
-                                                Binary/JEDIDIA/H.OJ/ANUOLUWAPO.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19155WRPWR-SBN</td>
-                                            <td class="tx-light tx-12">6/4/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                3884.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/17/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                30,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011906151415624/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO refund from
-                                                anu/OL/AMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19168SQVB8-SBN</td>
-                                            <td class="tx-light tx-12">6/17/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                33884.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                12.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                JU/NE - NGN</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT191759Q7MV-IDI</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                33872.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                NIPFEE/0000011906221136527812220117/93/NG0020036/JEDIDIAH
-                                                OLUWAFERANMI/JOLAOSO/000014/ADESOYE ADEWALE A /O/nline
-                                                to Access Bank ADESOYE AD</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19175GTC80</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                33822.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                32,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">NIBSS INSTANT PAYMENT
-                                                TSS/NIP/000001190622113652781222011793//NG0020036/JEDIDIAH
-                                                OLUWAFERANMI JOL/AOSO/000014/ADESOYE ADEWALE A /Onli/ne
-                                                to Access Bank ADESOYE ADEWA</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT191758LFP5-SBN</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1822.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED
-                                                TAX/NIPVAT/0000011906221136527812220117/93/NG0020036/JEDIDIAH
-                                                OLUWAFERANMI/JOLAOSO/000014/ADESOYE ADEWALE A /O/nline
-                                                to Access Bank ADESOYE AD</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19175Q7FDF-SBN</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1820.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                J/UNE 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19175P2863</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1770.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR JUNE/2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT191756QTPW</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1767.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/24/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                620.00
-                                            </td>
-                                            <td class="tx-light tx-12">OLAMIDE OLALEKAN
-                                                JOLAOSO/Onepay/0000010000011906231917225/On/line to
-                                                Sterling Bank OLAMIDE OLALE/KAN JOLAOSO
-                                                trf/JEDIDIAH.OJ/OLAMIDE/.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19175608WC-SBN</td>
-                                            <td class="tx-light tx-12">6/24/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1147.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                6/28/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                32,620.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK]Onepay/0000010000011906290645542/On]line to
-                                                Sterling Bank JEDIDIAH OLUW]AFERANMI JOLAOSO refund for
-                                                Corolla]service etc/OLAMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT191790R4Y1-SBN</td>
-                                            <td class="tx-light tx-12">6/28/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                33767.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                7/1/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011907010605166/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO May
-                                                2019/OLAMIDE.O/J/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT1918236FDY-SBN</td>
-                                            <td class="tx-light tx-12">7/1/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                35767.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                7/22/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                20.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                JU/LY - NGN</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19203LPWBK-IDI</td>
-                                            <td class="tx-light tx-12">7/22/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                35747.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                7/22/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                J/ULY 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19203QHD81</td>
-                                            <td class="tx-light tx-12">7/22/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                35697.96
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                7/22/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR JULY/2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19203KN661</td>
-                                            <td class="tx-light tx-12">7/22/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                35695.46
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                7/31/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                110.59
-                                            </td>
-                                            <td class="tx-light tx-12">Credit Interest]]CAPITALISE
-                                                ACTIVITY FOR SCHEDULE]</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">AAACT19212P46V33W1</td>
-                                            <td class="tx-light tx-12">7/31/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                35806.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/1/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011908010602536/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO May
-                                                2019/OLAMIDE.O/J/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19213BGGJD-SBN</td>
-                                            <td class="tx-light tx-12">8/1/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                37806.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/2/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                35,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">OLAMIDE OLALEKAN
-                                                JOLAOSO/Onepay/0000010000011908021121862/On/line to
-                                                Sterling Bank OLAMIDE OLALE/KAN JOLAOSO loan to
-                                                anu/JEDIDIAH.OJ//OLAMIDE.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19214QNJFP-SBN</td>
-                                            <td class="tx-light tx-12">8/2/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                2806.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/14/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                35,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011908101804776499//Online to
-                                                Sterling Bank JEDIDIAH O/LUWAFERANMI JOLAOSO refund from
-                                                anu//OLAMIDE.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19226RF93S-SBN</td>
-                                            <td class="tx-light tx-12">8/14/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                37806.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/19/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                16.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                AU/GUST- NGN</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19231JG23X-ARO</td>
-                                            <td class="tx-light tx-12">8/19/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                37790.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/19/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                A/UGUST 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT192316R77Z</td>
-                                            <td class="tx-light tx-12">8/19/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                37740.05
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/19/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR AUGU/ST 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT192319CN6Y</td>
-                                            <td class="tx-light tx-12">8/19/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                37737.55
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/26/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                20,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">ANUOLUWAPO OMOSILEOLA
-                                                JOLAOSO/Onepay/0000010000011908261554293/On/line to
-                                                Sterling Bank ANUOLUWAPO OM/OSILEOLA JOLAOSO School bag
-                                                lunch b/ag etc./JEDIDIAH.OJ/ANUOLUWAPO.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19238M602Y-SBN</td>
-                                            <td class="tx-light tx-12">8/26/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                17737.55
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/28/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9,350.00
-                                            </td>
-                                            <td class="tx-light tx-12">JEDIDIAH</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">TT192402XBDR-ILU</td>
-                                            <td class="tx-light tx-12">8/28/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27087.55
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                8/30/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                67.63
-                                            </td>
-                                            <td class="tx-light tx-12">Credit Interest//CAPITALISE
-                                                ACTIVITY FOR SCHEDULE/</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">AAACT19242X5NZ2J91</td>
-                                            <td class="tx-light tx-12">8/31/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                27155.18
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9/3/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011909031314646/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO Sept
-                                                2019/OLAMIDE./OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT192464TBQZ-SBN</td>
-                                            <td class="tx-light tx-12">9/3/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                29155.18
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9/13/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                28,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">OLAMIDE OLALEKAN
-                                                JOLAOSO/Onepay/000001000001190913085643/Onl/ine to
-                                                Sterling Bank OLAMIDE OLALEK/AN JOLAOSO for Anu s
-                                                phd/JEDIDIAH.O/J/OLAMIDE.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19256CCXLV-SBN</td>
-                                            <td class="tx-light tx-12">9/13/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1155.18
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                50.00
-                                            </td>
-                                            <td class="tx-light tx-12">VERVE CARD MAINTENANCE CHARGE FOR
-                                                S/EPTEMBER 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19266MWRDZ</td>
-                                            <td class="tx-light tx-12">9/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1105.18
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9/23/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2.50
-                                            </td>
-                                            <td class="tx-light tx-12">VALUE ADDED TAX/VERVE CARD
-                                                MAINTENANCE VAT FOR SEPT/EMBER 2019</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT192661WW7K</td>
-                                            <td class="tx-light tx-12">9/23/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1102.68
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                9/30/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                39.18
-                                            </td>
-                                            <td class="tx-light tx-12">Credit Interest//CAPITALISE
-                                                ACTIVITY FOR SCHEDULE/</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">AAACT1927332LS31ZM</td>
-                                            <td class="tx-light tx-12">9/30/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1141.86
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                10/2/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                16.00
-                                            </td>
-                                            <td class="tx-light tx-12">SMS NOTIFICATION CHARGE FOR 2019
-                                                SE/PTEMBER- NGN</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19275HWXP2</td>
-                                            <td class="tx-light tx-12">10/2/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1125.86
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                10/3/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                2,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011910031622820/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO Oct 19
-                                                trf/OLAMIDE/.OJ/JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19276QGQCK-SBN</td>
-                                            <td class="tx-light tx-12">10/3/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                3125.86
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                10/4/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                28,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">
-                                                BANK/Onepay/0000010000011910041408290/On/line to
-                                                Sterling Bank JEDIDIAH OLUW/AFERANMI JOLAOSO refund
-                                                /OLAMIDE.OJ//JEDIDIAH.OJ</td>
-                                            <td class="tx-light tx-12">Credit</td>
-
-                                            <td class="tx-bold tx-12">FT19277T1Q0Z-SBN</td>
-                                            <td class="tx-light tx-12">10/4/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                31125.86
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                10/15/2019 12:00:00 AM
-                                            </td>
-                                            <td class="tx-bold tx-primary text-uppercase tx-12">
-                                                30,000.00
-                                            </td>
-                                            <td class="tx-light tx-12">OLAMIDE OLALEKAN
-                                                JOLAOSO/Onepay/0000010000011910151012205/On/line to
-                                                Sterling Bank OLAMIDE OLALE/KAN JOLAOSO loan for anu s
-                                                phone /J/EDIDIAH.OJ/OLAMIDE.OJ</td>
-                                            <td class="tx-light tx-12">Debit</td>
-
-                                            <td class="tx-bold tx-12">FT19288SDCKR-SBN</td>
-                                            <td class="tx-light tx-12">10/15/2019 12:00:00 AM</td>
-                                            <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
-                                                data-placement="top">
-                                                1125.86
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div><!-- card-body -->
-                </div><!-- card -->
-            </div>
+             <div class="container-fluid mg-t-10">
+                 <div class="card">
+                     <div class="card-header d-flex align-items-start justify-content-between pd-b-10 pd-t-10">
+                         <div>
+                             <h5 class="mg-b-0 tx-bold text-uppercase">All Available Cases</h5>
+                         </div>
+                     </div><!-- card-header -->
+                     <div class="card-body pd-lg-25">
+                         <div class="row align-items-sm-end">
+                             <div class="col-lg-12 col-xl-12">
+                                 <div data-label="Example" class="df-example demo-table">
+                                     <table id="example2" class="table">
+                                         <thead>
+                                             <tr>
+                                                 <th data-priority="1" class="wd-15p">Customer Name</th>
+                                                 <th class="wd-10p">Channel</th>
+                                                 <th class="wd-3p">Account #</th>
+                                                 <th class="wd-2p">Cust. ID</th>
+                                                 <th class="wd-2p">Amount</th>
+                                                 <th data-priority="2" class="wd-10p">Date/Time</th>
+                                                 <th class="wd-2p">Rule</th>
+                                                 <th class="wd-2p text-center">Status</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">ABDULRAHMAN OLUWASEGUN BALOGUN</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">07/01/2019 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">WOMI OFEM PETER</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a></td>
+                                                 <td class="tx-light tx-12">0064990447</td>
+                                                 <td class="tx-light tx-12">23675443</td>
+                                                 <td class="tx-bold tx-12">N423,323</td>
+                                                 <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"
+                                                         class="text-success"><i class="text-success fas fa-link"></i>
+                                                         Linked</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">IBIYEMI ESTHER OYEWUSI</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">ATM TRF/CASH WTD</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">04/26/2018 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">OLUDELE ADURAGBEMI AKINTOLA</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Mobile Banking MFINO</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">09/06/2018 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 5
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"
+                                                         class="text-success"><i class="text-success fas fa-link"></i>
+                                                         Linked</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">John Hanni Obong</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a>
+                                                 </td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">07/01/2019 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">MARYAM ABIOLA TOLASE</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a></td>
+                                                 <td class="tx-light tx-12">0064990447</td>
+                                                 <td class="tx-light tx-12">23675443</td>
+                                                 <td class="tx-bold tx-12">N423,323</td>
+                                                 <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"
+                                                         class="text-success"><i class="text-success fas fa-link"></i>
+                                                         Linked</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">IBRAHIM CHINDO</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">ATM TRF/CASH WTD</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">04/26/2018 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">Jane Doe</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Mobile Banking MFINO</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">09/06/2018 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">Obong Owo Emeka</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a>
+                                                 </td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">07/01/2019 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">Oluwaseun Akanbi</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">Sterling OnePay</a></td>
+                                                 <td class="tx-light tx-12">0064990447</td>
+                                                 <td class="tx-light tx-12">23675443</td>
+                                                 <td class="tx-bold tx-12">N423,323</td>
+                                                 <td class="tx-light tx-12">03/20/2018 04:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 2
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"
+                                                         class="text-success"><i class="text-success fas fa-link"></i>
+                                                         Linked</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">John Doe Afolabi</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">ATM TRF/CASH WTD</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">04/26/2018 11:52:28</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                             <tr>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="case-1.html">Juliet Ekanem</a></td>
+                                                 <td class="tx-bold tx-primary text-uppercase tx-12"><a
+                                                         href="channel-1.html">web-thirdparty</a></td>
+                                                 <td class="tx-light tx-12">0059477108</td>
+                                                 <td class="tx-light tx-12">10230104</td>
+                                                 <td class="tx-bold tx-12">N10,233,323</td>
+                                                 <td class="tx-light tx-12">01/06/2019 11:52:01</td>
+                                                 <td class="tx-bold text-danger tx-12" data-toggle="tooltip"
+                                                     data-placement="top" title="NEW_USER_TO_NEW_BENEFICIARY">Rule 1
+                                                 </td>
+                                                 <td class="tx-12 tx-medium text-center" data-toggle="tooltip"
+                                                     data-placement="top" title="New Case"><a href="case-1.html"><i
+                                                             class="text-danger fas fa-star"></i> New</a>
+                                                 </td>
+                                             </tr>
+
+                                         </tbody>
+                                     </table>
+                                 </div><!-- df-example -->
+                             </div>
+                         </div>
+                     </div><!-- card-body -->
+                 </div><!-- card -->
+             </div>
 
         </div><!-- container -->
     </div><!-- content -->
@@ -1440,8 +711,45 @@
 
     <!-- Page Styles -->
     <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
 
     <script src="assets/js/dashforge.js"></script>
+
+    <script>
+        $(function () {
+            'use strict'
+
+            $('#example2').DataTable({
+                responsive: true,
+                language: {
+                    searchPlaceholder: 'Search...',
+                    sSearch: '',
+                    lengthMenu: '_MENU_ items/page',
+                },
+                columnDefs: [{
+                        responsivePriority: 1,
+                        targets: 0
+                    },
+                    {
+                        responsivePriority: 2,
+                        targets: -1
+                    }
+                ],
+                "order": [
+                    [7, "desc"]
+                ]
+            });
+
+            // Initialize ToolTip
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+        });
+    </script>
 
     <script>
         $(function () {
