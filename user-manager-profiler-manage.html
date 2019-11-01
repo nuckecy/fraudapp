@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="Sterling Bank Fraud Analytics Applications">
+  <title>Discover - Fraud Analytics</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/sterling_ball.png">
+
+  <!-- vendor css -->
+  <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link href="lib/prismjs/themes/prism-vs.css" rel="stylesheet">
+    <link href="lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
+
+  <!-- DashForge CSS -->
+  <link rel="stylesheet" href="assets/css/dashforge.css">
+  <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+</head>
+
+<body class="page-profile">
+
+  <header class="navbar navbar-header navbar-header-fixed">
+    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+      <div class="navbar-brand">
+        <a href="home.html" class="df-logo"><img src="assets/images/sterling_ball.svg" width="40px;"
+            style="padding-right: 10px;"><span>Fraud Analytics</span></a>
+      </div><!-- navbar-brand -->
+    <div id="navbarMenu" class="navbar-menu-wrapper">
+      <div class="navbar-menu-header">
+          <a href="home.html" class="df-logo"><img src="assets/images/sterling_ball.svg" width="40px;"
+              style="padding-right: 10px;"><span>Fraud Analytics</span></a>
+          <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+      </div><!-- navbar-menu-header -->
+      <ul class="nav navbar-menu">
+        <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
+        <li class="nav-item active"><a href="home.html" class="nav-link"><i data-feather="box"></i> Discover</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Reports</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Channels</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i data-feather="archive"></i> Rules</a></li> 
+      </ul>
+    </div><!-- navbar-menu-wrapper -->
+    <div class="navbar-right">
+      <span id="navbarSearch" href="" class="search-link d-none d-sm-block"><i data-feather="user"></i> Otobong
+        Okoko</span>
+      <div class="dropdown dropdown-profile">
+        <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+          <div class="avatar avatar-sm"><img
+              src="https://media.licdn.com/dms/image/C4E03AQH_VDoBEasRAg/profile-displayphoto-shrink_200_200/0?e=1575504000&v=beta&t=XuGRfGAEjZRglHhg3qLzVjdxU5C53Eqoc_8qUX1edSk"
+              class="rounded-circle" alt=""></div>
+        </a><!-- dropdown-link -->
+        <div class="dropdown-menu dropdown-menu-right tx-13">
+          <div class="avatar avatar-lg mg-b-15"><img
+              src="https://media.licdn.com/dms/image/C4E03AQH_VDoBEasRAg/profile-displayphoto-shrink_200_200/0?e=1575504000&v=beta&t=XuGRfGAEjZRglHhg3qLzVjdxU5C53Eqoc_8qUX1edSk"
+              class="rounded-circle"
+              alt="Otobong Okoko"></div>
+          <h6 class="tx-semibold mg-b-0">Otobong Okoko</h6>
+          <p class="mg-b-5 tx-12 tx-color-03">Investigator</p>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+          <a href="login.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+        </div><!-- dropdown-menu -->
+      </div><!-- dropdown -->
+    </div><!-- navbar-right -->
+  </header><!-- navbar -->
+<div class="content content-fixed bd-b">
+    <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h4 class="mg-b-5">Support Center</h4>
+            </div>
+        </div>
+    </div><!-- container -->
+</div>
+  <div class="content content-fixed content-auth" style="margin-top:0px;">
+    <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+        <div class="row">
+            <div class="col-lg-3 col-xl-2 d-none d-lg-block">
+                <nav class="nav nav-classic">
+                    <a href="" class="nav-link">All Users</a>
+                    <a href="" class="nav-link">Create New User</a>
+                    <a href="" class="nav-link">Manage Users</a>
+                </nav>
+            </div><!-- col -->
+
+            <div class="col-lg-9 col-xl-10">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                        <li class="breadcrumb-item"><a href="#">Support Center</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Installation</li>
+                    </ol>
+                </nav>
+                <h3 class="mg-b-25">Manager User</h3>
+
+                <div class="row row-xs mg-b-25">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="bd pd-20">
+                                <label class="tx-sans tx-10 tx-medium tx-spacing-1 tx-uppercase tx-color-03 mg-b-10">NPM
+                                    Installation</label>
+                                <ul class="list-unstyled lh-7 mg-b-0">
+                                    <li><a href="" class="link-01">Common errors when intalling NPM</a></li>
+                                    <li><a href="" class="link-01">NPM for Windows</a></li>
+                                    <li><a href="" class="link-01">Cannot install npm in mac</a></li>
+                                    <li><a href="" class="link-01">NPM does not recognize in local</a></li>
+                                    <li><a href="" class="link-01">NPM version not showing when doing command</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mg-t-20 mg-sm-t-0">
+                            <div class="bd pd-20">
+                                <label
+                                    class="tx-sans tx-10 tx-medium tx-spacing-1 tx-uppercase tx-color-03 mg-b-10">Bootstrap
+                                    Installation</label>
+                                <ul class="list-unstyled lh-7 mg-b-0">
+                                    <li><a href="" class="link-01">Common errors when intalling Bootstrap</a></li>
+                                    <li><a href="" class="link-01">Migrating from Bootstrap 3</a></li>
+                                    <li><a href="" class="link-01">Bootstrap using Webpack</a></li>
+                                    <li><a href="" class="link-01">Bootstrap react components</a></li>
+                                    <li><a href="" class="link-01">Example of bootsrap page using navbar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- col -->
+        </div><!-- row -->
+
+
+    </div>
+  </div><!-- content -->
+
+
+  <footer class="footer">
+    <div>
+      <span>&copy; 2019 Sterling Plc - FraudApp v1.0.0. </span>
+    </div>
+    <div>
+      <!-- 
+          <nav class="nav">
+          <a href="#" class="nav-link"></a>
+          </nav> 
+        -->
+    </div>
+  </footer>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/feather-icons/feather.min.js"></script>
+  <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+  <!-- Page Styles -->
+  <script src="lib/prismjs/prism.js"></script>
+  <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+  <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+  <script src="lib/select2/js/select2.min.js"></script>
+
+  <script src="assets/js/dashforge.js"></script>
+
+    <script>
+        $(function () {
+            'use strict'
+
+            $('#example2').DataTable({
+                responsive: true,
+                language: {
+                    searchPlaceholder: 'Search...',
+                    sSearch: '',
+                    lengthMenu: '_MENU_ items/page',
+                },
+                columnDefs: [{
+                        responsivePriority: 1,
+                        targets: 0
+                    },
+                    {
+                        responsivePriority: 2,
+                        targets: -1
+                    }
+                ],
+                "order": [
+                    [0, "desc"]
+                ]
+            });
+
+            // Initialize ToolTip
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+        });
+    </script>
+</body>
+
+</html>
